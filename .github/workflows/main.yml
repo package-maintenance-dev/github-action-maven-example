@@ -8,3 +8,5 @@ jobs:
       - name: package-maintenance
         id: package-maintenance
         uses: package-maintenance-dev/github-action@v0.0.1-SNAPSHOT
+        with:
+          github-repository: ${{ github.repository }}
