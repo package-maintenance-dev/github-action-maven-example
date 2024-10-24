@@ -10,3 +10,4 @@ jobs:
         uses: package-maintenance-dev/github-action@v0.0.1-SNAPSHOT
         with:
           github-repository: ${{ github.repository }}
+          working-directory: ${{github.workspace}}
