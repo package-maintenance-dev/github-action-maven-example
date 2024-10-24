@@ -104,11 +104,10 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <!-- Slang library for various utilities -->
+        <!-- Poorly supported library -->
         <dependency>
-            <groupId>io.vavr</groupId>
-            <artifactId>vavr</artifactId>
-            <version>0.10.4</version>
+            <groupId>org.violetlib</groupId>
+            <artifactId>vutils</artifactId>
         </dependency>
 
         <!-- Micrometer for telemetry -->
