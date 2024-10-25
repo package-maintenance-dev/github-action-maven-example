@@ -5,25 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to check Maven's project dependencies maintenance
     steps:
-      - name: Print a markdown heading and list
-        run: |
-          echo "# Here is a heading"
-          echo "- Item 1"
-          echo "- Item 2"
-      - name: Write markdown to job summary
-        run: |
-          printenv
-      - name: Write markdown to job summary
-        run: |
-          echo "# Job Summary" >> $GITHUB_STEP_SUMMARY
-          echo "This is a **bold** text in the summary." >> $GITHUB_STEP_SUMMARY
-          echo "- List item 1" >> $GITHUB_STEP_SUMMARY
-          echo "- List item 2" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-          echo "Code block example" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-      - name: package-maintenance
+      - name: Check dependencies maintenance
         id: package-maintenance
         uses: package-maintenance-dev/github-action@v0.0.1-SNAPSHOT
-        with:
-          github-repository: ${{ github.repository }}
