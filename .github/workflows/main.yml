@@ -12,6 +12,9 @@ jobs:
           echo "- Item 2"
       - name: Write markdown to job summary
         run: |
+          printenv
+      - name: Write markdown to job summary
+        run: |
           echo "# Job Summary" >> $GITHUB_STEP_SUMMARY
           echo "This is a **bold** text in the summary." >> $GITHUB_STEP_SUMMARY
           echo "- List item 1" >> $GITHUB_STEP_SUMMARY
