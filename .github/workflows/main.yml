@@ -5,6 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to check Maven's project dependencies maintenance
     steps:
+      - name: Print a markdown heading and list
+        run: |
+          echo "# Here is a heading"
+          echo "- Item 1"
+          echo "- Item 2"
       - name: package-maintenance
         id: package-maintenance
         uses: package-maintenance-dev/github-action@v0.0.1-SNAPSHOT
