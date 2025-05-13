@@ -12,7 +12,7 @@ If you have a Maven-based project hosted on GitHub, to use this action you need 
 
 - Enable 'Dependency Graph' for the repository;
 - Set up an action (please, find example [here](https://github.com/package-maintenance-dev/github-action-maven-example/blob/main/.github/workflows/main.yml));
-- Find dependencies' report in a run output along with a run result (please, find example [here](https://github.com/package-maintenance-dev/github-action-maven-example/actions/runs/11512065565));
+- Find dependencies' report in a run output along with a run result (please, find examples [here](https://github.com/package-maintenance-dev/github-action-maven-example/actions));
 
 #### Related documentation
 - [GitHub Dependency Graph: How to enable Dependency Graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/configuring-the-dependency-graph)
